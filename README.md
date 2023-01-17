@@ -1,2 +1,5 @@
 # Custom_Gym_Env
-Creating my own custom OpenAi Gym Environment to practice the creation of environments for reinforcement learning. 
+
+Creating my own custom OpenAi Gym Environment to practice the creation of environments for reinforcement learning. Here I will be implementing my twist on the classic Frozen-Lake grid world environment called "Ghostly Grid World", the aim of this project is to develop a deeper understanding of how RL environments work as I read through Miguel Morales Deep Reinforcement Learning book. 
+
+This env works like a frozen lake, where an agent (Timmy) is trying to escape a haunted house through the door (positive terminal state). However, instead of having set "holes" (negative terminal states) in the environment, I would like to see how Timmy performs when "ghosts" move around. Ideally, like in the frozen lake env, Timmy will learn to make his way to the door and avoid the ghosts on his way. 

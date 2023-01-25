@@ -32,8 +32,8 @@ class GhostlyGridWorld(gym.Env):
             {
                 "agent": spaces.Box(low=0, high=0, shape=(2, ), dtype=np.int32),
                 "target": spaces.Box(low=size - 1, high=size - 1, shape=(2, ), dtype=np.int32),
-                "ghost1": spaces.Box(low=0, high=size - 1, shape=(2, ), dtype=np.int32),
-                "ghost2": spaces.Box(low=0, high=size - 1, shape=(2, ), dtype=np.int32)
+                "ghost1": spaces.Box(low=2, high=size - 1, shape=(2, ), dtype=np.int32),
+                "ghost2": spaces.Box(low=2, high=size - 1, shape=(2, ), dtype=np.int32)
             }
         )
         self.action_space = spaces.Discrete(4)
@@ -186,10 +186,12 @@ class GhostlyGridWorld(gym.Env):
 #----- Testing -----#
 
 env = GhostlyGridWorld(size=6)
-
-env.reset()
-
-for i in range(200):
-    obv, reward, done, info = env.step(action=np.random.randint(0, 4))
-    print(f"Observation: {obv}, Reward: {reward}, Done: {done}, Info: {info}")
+ 
+for episode in range(10):
+    env.reset()
+    done = False 
+    while done == False:
+        obv, reward, done, info = env.step(action=np.random.randint(0, 4)) # Mimics random selection of agent action
+        print(f"Observation: {obv}, Reward: {reward}, Done: {done}, Info: {info}")
+    print(f"\n---- Episode reward: {reward} ----\n")
 

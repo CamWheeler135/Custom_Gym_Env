@@ -1,6 +1,6 @@
 from gymnasium.envs.registration import register
 
 register(
-    id='GhostlyGrid-v0',
-    entry_point='ghostlygrid.envs:GhostlyGrid-v0'
+    id='ghostly_grid/GhostlyGridV0',
+    entry_point='ghostly_grid.envs:GhostlyGridWorld'
 )

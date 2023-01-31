@@ -1,6 +1,6 @@
 import numpy as np
 import gymnasium as gym
-from gym import spaces
+from gymnasium import spaces
 import pygame
 
 

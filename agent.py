@@ -4,10 +4,9 @@ import gymnasium as gym
 import tensorflow as tf
 from tensorflow import keras
 import numpy as np
-import random
+import ghostly_grid
 
-
-env = gym.make('GhostlyGrid-v0')
+env = gym.make('ghostly_grid/GhostlyGridV0')
 
 print(env.action_space)
-
+print(env.observation_space)

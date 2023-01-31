@@ -10,6 +10,6 @@ This env works like a frozen lake, where an agent (Timmy) is trying to escape a 
 
 - I have adapted the code from the OpenAI tutorial that runs through how to create a simple grid world with no negative terminal states, the agent just has to find the end goal. [OpenAI Gymnasium Tutorial](https://gymnasium.farama.org/tutorials/gymnasium_basics/environment_creation/).
 
-- The tutorial utilized pygame to render how the agent is playing, the tutorial referenced above, but the [Pygame Docs](https://www.pygame.org/docs/ref/draw.html#pygame.draw.line) contains much more information into how the code is working.
+- The tutorial referenced above utilized pygame to render how the agent is playing but the [Pygame Docs](https://www.pygame.org/docs/ref/draw.html#pygame.draw.line) contains much more information into how the code is working.
 
 - A brief video walk through on how Gym envs should work by [Nicholas Renotte](https://www.youtube.com/watch?v=bD6V3rcr_54).

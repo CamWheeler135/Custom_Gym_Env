@@ -7,7 +7,7 @@ import numpy as np
 import random
 
 
-env = gym.make('ghostly_grid_world_v0')
+env = gym.make('GhostlyGrid-v0')
 
 print(env.action_space)
 

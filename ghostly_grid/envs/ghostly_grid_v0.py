@@ -184,13 +184,13 @@ class GhostlyGridWorld(gym.Env):
 
 #----- Testing -----#
 
-env = GhostlyGridWorld(size=6)
+# env = GhostlyGridWorld(size=6)
  
-for episode in range(10):
-    env.reset()
-    done = False 
-    while done == False:
-        obv, reward, done, info = env.step(action=np.random.randint(0, 4)) # Mimics random selection of agent action
-        print(f"Observation: {obv}, Reward: {reward}, Done: {done}, Info: {info}")
-    print(f"\n---- Episode reward: {reward} ----\n")
+# for episode in range(10):
+#     env.reset()
+#     done = False 
+#     while done == False:
+#         obv, reward, done, info = env.step(action=np.random.randint(0, 4)) # Mimics random selection of agent action
+#         print(f"Observation: {obv}, Reward: {reward}, Done: {done}, Info: {info}")
+#     print(f"\n---- Episode reward: {reward} ----\n")
 

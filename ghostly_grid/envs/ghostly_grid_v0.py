@@ -1,4 +1,3 @@
-# Here is where the environment will go.
 import numpy as np
 import gymnasium as gym
 from gym import spaces
